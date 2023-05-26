@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.TodayFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Add Task"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/purple_200"/>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/add_button"
+            android:text="Done:  0/0"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/teal_700"
+            android:drawableRight="@drawable/baseline_star_24"/>
+
+        <ImageView
+            android:id="@+id/imageP"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/done"
+            android:layout_above="@+id/buttonP"/>
+
+        <Button
+            android:id="@+id/buttonP"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/purple_200"
+            android:drawableLeft="@drawable/baseline_camera_alt_24"
+            android:text="Make a memory from today"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
